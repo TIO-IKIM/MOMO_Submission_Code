@@ -5,9 +5,13 @@ Installation instructions:
 
 1) Install the environment. This can be done using anaconda/miniconda: 'conda env create --file env_MEDDL.yml'
  All scripts require being run in the conda environment. Activate it like this: 'conda activate MEDDL'.
-2) Download some example data which you can test MOMO on or contact me for the original data used.
+2) Download the networks from https://cloud.uk-essen.de/d/340cc6654419476ab683/ and put them into the main folder.
+3) Run 'python DownloadSample.py' (If there is an error with 7z not being installed, you have to unpack it yourself)
+4) Run 'python MOMO.py -v -s ./imports/sample/'
+
 NOTE: I compiled this entire project using miniconda3 on Ubuntu 20.04 LTS. The project should work on other
  systems aswell, since everything happens inside a conda environment, but I have not extensively tested that.
+ 
 NOTE: The entire project was run on a Black Titan GPU from NVIDIA. In theory it will work with any graphics
  card which is supported by the pytorch version supplied in the environment, but I have only tested it on
  a GTX 1080. If you have no or no useful GPU, you have to edit any script which uses a GPU to use the CPU
@@ -15,10 +19,6 @@ NOTE: The entire project was run on a Black Titan GPU from NVIDIA. In theory it 
  it so it either checks if cuda is available on your system, or even edit it so it only uses the CPU.
  With a GPU, the runtime of the program should be at most 10 seconds for a series, depending on the size
  and GPU, with CPU the runtime is much higher (probably around 30-60s, I have not tested extensively).
-
-IF YOU ONLY WANT TO DO A QUICK DEMO, IGNORE THE REST AND SIMPLY DO:
-1) 'python DownloadSample.py' (If there is an error with 7z not being installed, you have to unpack it yourself)
-2) 'python MOMO.py -v -s ./imports/sample/'
 
 Execution instructions and notes:
 
