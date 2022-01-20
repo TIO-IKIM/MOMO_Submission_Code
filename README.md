@@ -1,5 +1,5 @@
-The entire project is licensed under GPL-3, which means you can run it, keep it, copy it, modify it, etc. as long as you
-mention my name somewhere and point to the original. Have fun
+The project code is meant to be open source, which means you can run it, keep it, copy it, modify it, etc. as long as you
+mention my name and paper somewhere and point to the original. Have fun
 
 Installation instructions:
 
