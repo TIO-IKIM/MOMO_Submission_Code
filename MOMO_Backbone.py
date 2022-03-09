@@ -906,6 +906,10 @@ def PredictStudy_5(meta_dict, mapfile, network, verbose=False, local=True, split
             # No matches
             if verbose:
                 print("No exact match for Procedure Code in mapping.")
+                
+    # Classify study as MG if STModa == MG because there is only one thing it can be
+    if STModa == "MG":
+        return "MAM", "Only one solution possible for modality 'MG'."
     ####################################################################################################
     # Layer 2
     ####################################################################################################
@@ -1517,14 +1521,13 @@ def PredictStudy_2(meta_dict, mapfile, network, verbose=False, local=True, split
             # No matches
             if verbose:
                 print("No exact match for Procedure Code in mapping.")
-                
-    ####################################################################################################
-    # Layer 2 (Network)
-    ####################################################################################################
+    
     # Classify study as MG if STModa == MG because there is only one thing it can be
     if STModa == "MG":
         return "MAM", "Only one solution possible for modality 'MG'."
-    
+    ####################################################################################################
+    # Layer 2 (Network)
+    ####################################################################################################
     # If predictions are made locally, the files need not be downloaded - non-local files must be acquired
     # first, else the network has nothing to evaluate on
     if not local:
@@ -1906,7 +1909,10 @@ def PredictStudy_3(meta_dict, mapfile, network, verbose=False, local=True, split
             # No matches
             if verbose:
                 print("No exact match for Procedure Code in mapping.")
-        
+    
+    # Classify study as MG if STModa == MG because there is only one thing it can be
+    if STModa == "MG":
+        return "MAM", "Only one solution possible for modality 'MG'."
     ####################################################################################################
     # Layer 2
     ####################################################################################################
@@ -1932,10 +1938,6 @@ def PredictStudy_3(meta_dict, mapfile, network, verbose=False, local=True, split
     ####################################################################################################
     # Layer 3 (Network)
     ####################################################################################################
-    # Classify study as MG if STModa == MG because there is only one thing it can be
-    if STModa == "MG":
-        return "MAM", "Only one solution possible for modality 'MG'."
-    
     # If predictions are made locally, the files need not be downloaded - non-local files must be acquired
     # first, else the network has nothing to evaluate on
     if not local:
@@ -2296,7 +2298,10 @@ def PredictStudy_4(meta_dict, mapfile, network, verbose=False, local=True, split
             # No matches
             if verbose:
                 print("No exact match for Procedure Code in mapping.")
-        
+    
+    # Classify study as MG if STModa == MG because there is only one thing it can be
+    if STModa == "MG":
+        return "MAM", "Only one solution possible for modality 'MG'."
     ####################################################################################################
     # Layer 2
     ####################################################################################################
@@ -2404,10 +2409,6 @@ def PredictStudy_4(meta_dict, mapfile, network, verbose=False, local=True, split
     ####################################################################################################
     # Layer 4 (Network)
     ####################################################################################################
-    # Classify study as MG if STModa == MG because there is only one thing it can be
-    if STModa == "MG":
-        return "MAM", "Only one solution possible for modality 'MG'."
-    
     # If predictions are made locally, the files need not be downloaded - non-local files must be acquired
     # first, else the network has nothing to evaluate on
     if not local:
@@ -2686,6 +2687,10 @@ def PredictStudy_9(meta_dict, mapfile, network, verbose=False, local=True, split
             # No matches
             if verbose:
                 print("No exact match for Procedure Code in mapping.")
+                
+    # Classify study as MG if STModa == MG because there is only one thing it can be
+    if STModa == "MG":
+        return "MAM", "Only one solution possible for modality 'MG'."
     ####################################################################################################
     # Layer 2
     ####################################################################################################
@@ -3084,6 +3089,10 @@ def PredictStudy_12(meta_dict, mapfile, network, verbose=False, local=True, spli
             # No matches
             if verbose:
                 print("No exact match for Procedure Code in mapping.")
+                
+    # Classify study as MG if STModa == MG because there is only one thing it can be
+    if STModa == "MG":
+        return "MAM", "Only one solution possible for modality 'MG'."
     ####################################################################################################
     # Layer 2
     ####################################################################################################

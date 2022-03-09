@@ -1,5 +1,8 @@
 The project code is meant to be open source, which means you can run it, keep it, copy it, modify it, etc. as long as you
-mention my name and paper somewhere and point to the original. Have fun
+mention my name and paper somewhere and point to the original. Have fun.
+This should go without saying, but this project is a WIP and has had limited testing. If you implement it somewhere where
+its failure can cause damage, please pay close attention to what it does and whether it works properly - If a bug has
+escaped me, I will attempt to fix it.
 
 Installation instructions:
 
