@@ -8,7 +8,7 @@ Installation instructions:
 
 1) Install the environment. This can be done using anaconda/miniconda: 'conda env create --file env_MEDDL.yml'
  All scripts require being run in the conda environment. Activate it like this: 'conda activate MEDDL'.
-2) Download the networks from https://cloud.uk-essen.de/d/340cc6654419476ab683/ and put them into the main folder.
+2) Download the networks from [https://cloud.uk-essen.de/d/9419e258dce34cabb848/] and put them into the main folder.
 3) Run 'python DownloadSample.py' (If there is an error with 7z not being installed, you have to unpack it yourself)
 4) Run 'python MOMO.py -v -s ./imports/sample/'
 
